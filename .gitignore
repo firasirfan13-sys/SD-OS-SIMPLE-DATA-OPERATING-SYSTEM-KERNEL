@@ -1,41 +1,32 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# --- GitHub C++ Template Base ---
+*.stackdump
+*.onboarding
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
-
-# Executables
+*.so
+*.dll
 *.exe
 *.out
 *.app
+*.i
+*.s
 
-# debug information files
-*.dwo
+# --- SD/OS Specific Binaries ---
+# This ignores your compiled kernel and shell files
+sdos_v*
+chaos_core
+kernel_main
+resolution_engine
+
+# --- Build Directories ---
+[Bb]in/
+[Ob]j/
+build/
+
+# --- IDE & System Files ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
